@@ -28,6 +28,27 @@
   color: #61dafb;
 }
 
+.section-title {
+  font-family: "Poppins", sans-serif;
+  font-style: 24px;
+  color: black;
+  text-align: center;
+  padding: 40px 0 5px 0;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+/* .section-title::after {
+  content: "";
+  background: rgb(0, 0, 0);
+  width: 20%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0px 41.5%;
+} */
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

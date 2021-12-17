@@ -1,0 +1,41 @@
+.trainer-card {
+  margin: 0 auto;
+  /* border: 5px solid red !important; */
+}
+
+.tariner-social {
+  padding: 0;
+  text-align: center;
+}
+
+.tariner-social .fab {
+  margin-right: 20px;
+  font-size: 26px;
+}
+
+.tariner-social .fa-linkedin-in {
+  color: #046aaa;
+  transition: 0.2s ease-in-out;
+}
+
+.tariner-social .fa-linkedin-in:hover {
+  transform: translateY(-7px);
+}
+
+.tariner-social .fa-github {
+  color: #110606;
+  transition: 0.2s ease-in-out;
+}
+
+.tariner-social .fa-github:hover {
+  transform: translateY(-7px);
+}
+
+.tariner-social .fa-twitter {
+  color: #1b9ae9;
+  transition: 0.2s ease-in-out;
+}
+
+.tariner-social .fa-twitter:hover {
+  transform: translateY(-7px);
+}

@@ -1,0 +1,27 @@
+.new-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(../../../images/coding.jpg);
+  /* height: 80vh; */
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 70px 30px;
+}
+
+.new-container h1 {
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.small-text {
+  padding-top: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.small-text p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
