@@ -1,0 +1,26 @@
+.register-container {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.register-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.register-btn {
+  color: white;
+  background-color: #1c9fff;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.register-btn:hover {
+  background-color: #5e78b8;
+  color: white;
+}

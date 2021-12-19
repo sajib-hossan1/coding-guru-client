@@ -2,10 +2,14 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Banner.css'
 import { Typewriter } from 'react-simple-typewriter'
+import banner1 from '../../../images/banner/banner1.png'
+import banner2 from '../../../images/banner/banner2.png'
+import banner3 from '../../../images/banner/banner3.png'
+import banner4 from '../../../images/banner/banner4.png'
 
 const Banner = () => {
     return (
-        <div className="banner">
+        <div className="banner-container">
             <Container>
                 <Row className="p-4">
                     <Col sm={12} md={6} className="b-left">
@@ -16,7 +20,7 @@ const Banner = () => {
                             <span className="typewriter">
                                     {/* Style will be inherited from the parent element */}
                                     <Typewriter
-                                        words={[ 'Artificial Intelligence (AI)', 'Data Strucutre', 'Web Design & Development' , 'C Program', 'Python']}
+                                        words={[ 'Artificial Intelligence (AI)', 'Data Strucutre', 'Web Design & Development', 'App Development' , 'C Programming', 'Python']}
                                         loop
                                         cursor
                                         cursorStyle='_'
@@ -29,20 +33,23 @@ const Banner = () => {
                         </div>
                     </Col>
                     <Col sm={12} md={6}>
-                        <div className="">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="..." class="d-block w-100" alt="..." />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="..." />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="..." />
+                        <div className="carousel-container">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img className="img-fluid" src={banner1} class="d-block w-75" alt="bannerImg" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img className="img-fluid" src={banner2} class="d-block w-75" alt="bannerImg" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img className="img-fluid" src={banner3} class="d-block w-75" alt="bannerImg" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img className="img-fluid" src={banner4} class="d-block w-75" alt="bannerImg" />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </Col>
                 </Row>

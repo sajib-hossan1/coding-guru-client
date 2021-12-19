@@ -1,16 +1,24 @@
-.banner {
-  height: 60vh;
+.banner-container {
+  height: 90vh;
+  padding-top: 60px;
 }
 
 .b-left {
   color: black;
-  height: 300px;
   display: flex;
   justify-content: center;
+}
+
+.b-left h1 {
+  font-size: 50px;
 }
 
 .typewriter {
   color: #1c9fff;
   margin-left: 10px;
   text-shadow: 0px 0px 5px #457fec23;
+}
+
+.carousel-container {
+  margin-top: 20px;
 }

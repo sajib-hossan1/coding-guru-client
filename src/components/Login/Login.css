@@ -1,0 +1,26 @@
+.login-container {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.login-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.login-btn {
+  color: white;
+  background-color: #1c9fff;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.login-btn:hover {
+  background-color: #5e78b8;
+  color: white;
+}

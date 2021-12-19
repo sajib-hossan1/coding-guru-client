@@ -1,4 +1,5 @@
 .new-container {
+  margin-top: 80px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
     url(../../../images/coding.jpg);
   /* height: 80vh; */

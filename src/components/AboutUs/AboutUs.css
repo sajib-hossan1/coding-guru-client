@@ -1,0 +1,14 @@
+.about-container {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  color: black;
+}
+
+.about-container h1 {
+  padding: 30px;
+  text-align: center;
+}
+
+.about-container h3 {
+  color: #1c9fff;
+}

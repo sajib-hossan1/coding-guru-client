@@ -18,3 +18,40 @@
 .navbar-bg {
   background-color: #1c9fff;
 }
+
+.cart {
+  color: white !important;
+}
+
+.login-btn-header {
+  color: white;
+  background-color: #1c9fff;
+  border: 1px solid rgb(255, 255, 255);
+  margin-left: 10px;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.login-btn-header:hover {
+  background-color: rgb(255, 187, 0);
+  color: black;
+}
+
+.avatar-img {
+  height: 43px;
+  width: 43px;
+  margin-right: 10px;
+  margin-left: 8px;
+  border-radius: 50%;
+}
+
+.user-info {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
