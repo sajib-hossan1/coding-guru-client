@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import initializeAuthentication from '../firebase/firebase.init'
 import { GoogleAuthProvider, getAuth, signInWithPopup, signOut, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { useNavigate } from "react-router";
+
 
 
 initializeAuthentication();
@@ -30,6 +30,7 @@ const useFirebase = () => {
 
     // sign in existing user
     const processLogin = (email, password,navigate, redirect_uri) => {
+        setisLoading(true)
         signInWithEmailAndPassword(auth,email, password)
         .then(userLogin => {
             const user = userLogin.user;
@@ -37,6 +38,7 @@ const useFirebase = () => {
             navigate(redirect_uri)
             setError('')
         })
+        .finally(() => setisLoading(false))
         .catch(error2 => {
             const error = error2.message;
             setError(error);
@@ -45,6 +47,7 @@ const useFirebase = () => {
 
     // register or creating a new user
     const createNewUser = (name,email, password,navigate,redirect_uri) => {
+        setisLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
         .then(userCredential => {
             const user = userCredential.user;
@@ -52,6 +55,7 @@ const useFirebase = () => {
             navigate(redirect_uri)
             setError('');
         })
+        .finally(() => setisLoading(false))
         .catch(error => {
             const errorMessage = error.message;
             setError(errorMessage);

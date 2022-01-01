@@ -1,9 +1,13 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import './AboutUs.css'
 
 const AboutUs = () => {
     return (
+        <>
+        <Header></Header>
         <div className="about-container">
             <h1>Coding <span className="brand-secondary-color">Guru</span></h1>
             <Container>
@@ -32,6 +36,8 @@ const AboutUs = () => {
                 </Row>
             </Container>
         </div>
+        <Footer></Footer>
+        </>
     );
 };
 

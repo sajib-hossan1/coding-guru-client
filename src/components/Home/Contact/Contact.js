@@ -29,7 +29,7 @@ const Contact = () => {
                     <input className="mb-3" type="email" name="email" />
                     <label>Message</label>
                     <textarea className="text-area" name="message" />
-                    <input className="send-btn" type="submit" value="Send" />
+                    <button className="send-btn" type="submit">Send</button>
                 </form>
             </div>
         </div>

@@ -1,14 +1,16 @@
 import Button from '@restart/ui/esm/Button';
 import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
+import { Form, Spinner } from 'react-bootstrap';
 import { useLocation, useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import './Login.css'
 
 const Login = () => {
     // firebase authentication
-    const {signInUsingGoogle, processLogin, error } = useAuth();
+    const {signInUsingGoogle, processLogin, isLoading , error } = useAuth();
 
     
     // set user's email and password values for log in
@@ -47,6 +49,8 @@ const Login = () => {
       }
 
     return (
+      <>
+      <Header></Header>
         <div className="login-container">
             <h1 className="section-title">Please Login</h1>
             <div className="login-form-container container">
@@ -64,6 +68,9 @@ const Login = () => {
                         <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" />
                     </Form.Group>
                     <p style={{color: 'red'}}>{error}</p>
+                    <p>
+                      { isLoading && <Spinner animation="border" variant="primary" /> }
+                    </p>
                     <Button className="login-btn" type="submit">
                         Log In
                     </Button>
@@ -75,6 +82,8 @@ const Login = () => {
                 </Form>
             </div>
         </div>
+        <Footer></Footer>
+      </>
     );
 };
 

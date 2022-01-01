@@ -1,0 +1,20 @@
+.table-responsive {
+  min-width: 350px !important;
+}
+
+.action-btn {
+  color: white;
+  background-color: #1c9fff;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.action-btn:hover {
+  background-color: #5e78b8;
+  color: white;
+}

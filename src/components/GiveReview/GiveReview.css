@@ -1,0 +1,21 @@
+.review-form {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.review-btn {
+  color: white;
+  background-color: #1c9fff;
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.review-btn:hover {
+  background-color: rgb(255, 187, 0);
+  color: black;
+}
