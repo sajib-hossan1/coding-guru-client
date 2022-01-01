@@ -14,7 +14,7 @@ const CourseDetails = () => {
     
     useEffect(()=> {
         setLoader(true)
-        fetch(`http://localhost:5000/courseDetails/${courseId}`)
+        fetch(`https://safe-refuge-53186.herokuapp.com/courseDetails/${courseId}`)
         .then(res => res.json())
         .then(data => setCourseDetail(data))
         .finally(() => setLoader(false))

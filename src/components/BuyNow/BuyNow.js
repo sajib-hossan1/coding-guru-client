@@ -39,7 +39,7 @@ const BuyNow = () => {
 
         
         setLoaderOrder(true)
-        fetch('http://localhost:5000/order', {
+        fetch('https://safe-refuge-53186.herokuapp.com/order', {
             method : 'POST',
             headers : {
                 'content-type' : 'application/json'
@@ -61,7 +61,7 @@ const BuyNow = () => {
      // get item/order item details from database
     useEffect(()=> {
         setLoader(true)
-        fetch(`http://localhost:5000/courseDetails/${courseId}`)
+        fetch(`https://safe-refuge-53186.herokuapp.com/courseDetails/${courseId}`)
         .then(res => res.json())
         .then(data => setCourse(data))
         .finally(() => setLoader(false))

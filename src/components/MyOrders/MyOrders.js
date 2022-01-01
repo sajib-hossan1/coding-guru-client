@@ -20,7 +20,7 @@ const MyOrders = () => {
     // load an user's order(s)
     useEffect( () => {
         setLoader(true)
-        fetch(`http://localhost:5000/orders?email=${user.email}`)
+        fetch(`https://safe-refuge-53186.herokuapp.com/orders?email=${user.email}`)
         .then(res => res.json())
         .then(data => setMyOrders(data))
         .finally(()=> setLoader(false))
@@ -31,7 +31,7 @@ const MyOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure you want to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`
+            const url = `https://safe-refuge-53186.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: 'DELETE',
             })
